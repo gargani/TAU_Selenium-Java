@@ -17,6 +17,7 @@ public class BaseTests {
         //This project is created using Test Automation University Course by Angie Jones
         //https://testautomationu.applitools.com/selenium-webdriver-tutorial-java/chapter3.html
 
+        //As per my MacBook
         System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
         driver = new ChromeDriver();
         driver.get(url);
