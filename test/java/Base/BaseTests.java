@@ -14,8 +14,6 @@ public class BaseTests {
 
     @BeforeClass
     public void Setup() {
-        //This project is created using Test Automation University Course by Angie Jones
-        //https://testautomationu.applitools.com/selenium-webdriver-tutorial-java/chapter3.html
 
         //As per my Machine/MacBook
         System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
@@ -26,24 +24,6 @@ public class BaseTests {
 
         //driver.manage().window().setSize(new Dimension(375, 812));
         //System.out.println(driver.getTitle());
-
-
-    /*
-    List<WebElement> links = driver.findElements(By.tagName("a"));
-        System.out.println(links.size());
-
-        WebElement ShiftingContentLink = driver.findElement(By.linkText("Shifting Content"));
-        ShiftingContentLink.click();
-
-        WebElement Example1 = driver.findElement(By.linkText("Example 1: Menu Element"));
-        Example1.click();
-
-        List<WebElement> Tabs = driver.findElements(By.tagName("li"));
-        System.out.println(Tabs.size());
-        String attribute = Tabs.get(2).getAttribute("name");
-        System.out.println(attribute);
-
-     */
     }
 
     @AfterClass

@@ -9,6 +9,7 @@ public class LoginPage {
     private By Username = By.id("username");
     private By Password = By.id("password");
     private By LoginButton = By.cssSelector("#login button");
+
     //Constructor to instatiate webdriver
     public LoginPage(WebDriver driver) {
         this.driver = driver;

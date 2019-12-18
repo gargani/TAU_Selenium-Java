@@ -27,7 +27,7 @@ public class LoginTests extends BaseTests {
         loginPage.setPassword("SuperSecretPassword");
         SecureAreaPage secAreaPage = loginPage.clickLogin();
 
-        Assert.assertTrue(secAreaPage.VerifyStatus().contains(
+        Assert.assertEquals(secAreaPage.VerifyStatus().contains(
                 "Your username is invalid!"),
                 "Alert text is incorrect");
     }
