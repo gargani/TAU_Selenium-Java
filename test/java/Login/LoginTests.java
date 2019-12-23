@@ -9,7 +9,9 @@ import pages.SecureAreaPage;
 public class LoginTests extends BaseTests {
 
     @Test(description = "Successful Login Test")
-    public void test_SuccessfulLogin() {
+    public void test_SuccessfulLogin() throws InterruptedException {
+
+        Thread.sleep(3000);
         LoginPage loginPage = hompage.clickformAuthLink();
         loginPage.setUserName("tomsmith");
         loginPage.setPassword("SuperSecretPassword!");

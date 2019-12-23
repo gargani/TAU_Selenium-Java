@@ -22,7 +22,6 @@ public class DropdownPage {
     }
 
     public List<String> getSelectedOptions() {
-
         List<WebElement> SelectedElements = findDropdownElement().getAllSelectedOptions();
         return SelectedElements.stream().map(e -> e.getText()).collect(Collectors.toList());
     }

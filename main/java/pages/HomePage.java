@@ -34,6 +34,5 @@ public class HomePage {
 
     private void clickLink(String LinkText) {
         driver.findElement(By.linkText(LinkText)).click();
-
     }
 }
