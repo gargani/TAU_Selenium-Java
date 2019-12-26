@@ -14,7 +14,7 @@ import pages.HomePage;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTests {
-    static String driverName = "safari";
+    static String driverName = "chrome";
     protected HomePage hompage;
     String url = "https://the-internet.herokuapp.com/";
     private WebDriver driver;
@@ -29,7 +29,7 @@ public class BaseTests {
         System.out.println(currentDirectory);
         System.out.println(java_Version);
 
-        if (os_Name.contains("mac") && driverName == "safari") {
+        if (os_Name.contains("mac")) {
             switch (driverName.toLowerCase()) {
                 case "chrome":
                     //Code to handle SSL certifcates (if any)
